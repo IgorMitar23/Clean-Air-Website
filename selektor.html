@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektor</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="selektor.css" type="text/css" />
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <header id="glavni-meni">
+      <div id="ime-sajta">
+        <h1 id="naslov">CLEAN<span id="span-naslov">AIR</span></h1>
+        <p id="moto">- Udahni čistinu, živi zdravo -</p>
+      </div>
+      <nav id="navigacioni-meni">
+        <a href="index.html" class="tabovi">Početna</a>
+        <a href="kakofunkcionisu.html" class="tabovi">Kako funcionišu?</a>
+        <a href="selektor.html" class="tabovi">Selektor</a>
+        <a href="galerija.html" class="tabovi">Galerija</a>
+        <a href="onama.html" class="tabovi">O nama</a>
+      </nav>
+    </header>
+    <main>
+      <p id="selektor-uvod">
+        Na osnovu odredjenih parametara, nadjite pravi prečišćivač vazduha za
+        vaš dom!
+      </p>
+      <div id="pitanja">
+        <section id="prvo-pitanje">
+          <div id="pitanje1">
+            <p id="pitanjezastan">1.Kolika je veličina vašeg stana?</p>
+            <div id="vrstestanova">
+              <input
+                onchange="odgNaStan()"
+                id="do20"
+                type="radio"
+                name="stan"
+                value="do20stan"
+              />
+              do 20m<sup>2</sup>
+              <input
+                onchange="odgNaStan()"
+                id="od20do40"
+                type="radio"
+                name="stan"
+                value="od20do40stan"
+              />
+              od 20m<sup>2</sup> do 40m<sup>2</sup>
+              <input
+                onchange="odgNaStan()"
+                id="od40"
+                type="radio"
+                name="stan"
+                value="od40stan"
+              />
+              od 40m<sup>2</sup>
+            </div>
+          </div>
+          <p id="odgovor1"></p>
+        </section>
+        <section id="drugo-pitanje">
+          <div id="pitanje2">
+            <p id="pitanjezafiltere">
+              Koji faktor je za tebe najvažniji prilikom odabira sistema za
+              filtriranje vazduha?
+            </p>
+            <div id="vrstefiltera">
+              <input
+                onchange="odgNaFilter()"
+                type="radio"
+                name="filter"
+                id="hepaodg"
+                value="hepafilter"
+              />Visok nivo filtriranja čestica, uključujući alergene i prašinu
+              <br />
+              <input
+                onchange="odgNaFilter()"
+                type="radio"
+                name="filter"
+                id="jonodg"
+                value="jonfilter"
+              />
+              Želiš opšti poboljšan kvalitet vazduha u prostoru <br />
+              <input
+                onchange="odgNaFilter()"
+                type="radio"
+                name="filter"
+                id="ugaljodg"
+                value="ugaljfilter"
+              />
+              Želiš eliminisati neprijatne mirise, kao što su mirisi hrane ili
+              dima <br />
+              <input
+                onchange="odgNaFilter()"
+                type="radio"
+                name="filter"
+                id="uvodg"
+                value="uvfilter"
+              />
+              Želiš smanjiti prisustvo bakterija i virusa u vazduhu
+            </div>
+          </div>
+          <p id="odgovor2"></p>
+        </section>
+      </div>
+      <hr />
+      <a class="vrhstrane" href="#top">Vrati se na vrh strane</a>
+    </main>
+    <footer>
+      <nav id="socmreze">
+        <a id="mreze-logo" href="https://www.facebook.com/" target="_blank"
+          ><img id="drustvenemreze" src="facebook.png"
+        /></a>
+        <a id="mreze-logo" href="https://www.instagram.com/" target="_blank"
+          ><img id="drustvenemreze" src="instagram.png"
+        /></a>
+        <a id="mreze-logo" href="https://twitter.com/" target="_blank"
+          ><img id="drustvenemreze" src="twitter.png"
+        /></a>
+        <a id="mreze-logo" href="https://www.youtube.com/" target="_blank"
+          ><img id="drustvenemreze" src="youtube.png"
+        /></a>
+      </nav>
+      <section class="pitanja">
+        <p class="pzapitanja">Ako imate pitanja, postavite ih ovde:</p>
+        <textarea rows="5" cols="50" id="sinan"></textarea>
+        <button class="potvrdi" onclick="pitati()">Potvrdi</button>
+      </section>
+    </footer>
+  </body>
+</html>

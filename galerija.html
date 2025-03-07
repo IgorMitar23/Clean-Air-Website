@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerija</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="galerija.css" type="text/css" />
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <header id="glavni-meni">
+      <div id="ime-sajta">
+        <h1 id="naslov">CLEAN<span id="span-naslov">AIR</span></h1>
+        <p id="moto">- Udahni čistinu, živi zdravo -</p>
+      </div>
+      <nav id="navigacioni-meni">
+        <a href="index.html" class="tabovi">Početna</a>
+        <a href="kakofunkcionisu.html" class="tabovi">Kako funcionišu?</a>
+        <a href="selektor.html" class="tabovi">Selektor</a>
+        <a href="galerija.html" class="tabovi">Galerija</a>
+        <a href="onama.html" class="tabovi">O nama</a>
+      </nav>
+    </header>
+    <main>
+      <p class="pricanje">
+        Ovde možete videti samo nekoliko vrsta prečišćivača koji su jedni od
+        vodećih na tržištu:
+      </p>
+      <section class="gallery">
+        <img
+          src="galerija1.png"
+          alt="Image 1"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija2.png"
+          alt="Image 2"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija3.png"
+          alt="Image 3"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija4.png"
+          alt="Image 4"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija5.png"
+          alt="Image 5"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija6.png"
+          alt="Image 6"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija7.png"
+          alt="Image 7"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija8.png"
+          alt="Image 8"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija9.png"
+          alt="Image 9"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija10.png"
+          alt="Image 10"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija11.png"
+          alt="Image 11"
+          onclick="uvecanaSlika(this.src)"
+        />
+      </section>
+      <section id="FullImageView">
+        <img id="FullImage" />
+        <span id="CloseButton" onclick="smanjiSliku()">&times;</span>
+      </section>
+      <hr />
+      <a class="vrhstrane" href="#top">Vrati se na vrh strane</a>
+    </main>
+    <footer>
+      <nav id="socmreze">
+        <a id="mreze-logo" href="https://www.facebook.com/" target="_blank"
+          ><img id="drustvenemreze" src="facebook.png"
+        /></a>
+        <a id="mreze-logo" href="https://www.instagram.com/" target="_blank"
+          ><img id="drustvenemreze" src="instagram.png"
+        /></a>
+        <a id="mreze-logo" href="https://twitter.com/" target="_blank"
+          ><img id="drustvenemreze" src="twitter.png"
+        /></a>
+        <a id="mreze-logo" href="https://www.youtube.com/" target="_blank"
+          ><img id="drustvenemreze" src="youtube.png"
+        /></a>
+      </nav>
+      <section class="pitanja">
+        <p class="pzapitanja">Ako imate pitanja, postavite ih ovde:</p>
+        <textarea rows="5" cols="50" id="sinan"></textarea>
+        <button class="potvrdi" onclick="pitati()">Potvrdi</button>
+      </section>
+    </footer>
+  </body>
+</html>

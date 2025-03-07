@@ -1,0 +1,38 @@
+#onama {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#kontakt {
+  width: 500px;
+  height: 500px;
+  border: 5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px 0 0 40px;
+}
+#petar,
+#adresa,
+#damjan {
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#osnivac {
+  font-weight: bold;
+}
+#petar,
+#damjan {
+  border: none;
+  color: #fff;
+  font-size: 30px;
+}
+#adresa {
+  background-color: #fff;
+  color: #8aaae5;
+}

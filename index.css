@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: Nunito, sans-serif;
+}
+/* BASIC RESET */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* BASIC RESET */
+body {
+  background-color: #8aaae5;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#ime-sajta {
+  color: black;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 20px;
+}
+#span-naslov {
+  background-color: #8aaae5;
+  color: #ffffff;
+}
+#navigacioni-meni {
+  height: 100%;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabovi {
+  text-decoration: none;
+  color: #8aaae5;
+  font-size: 20px;
+  height: 40px;
+  line-height: 20px;
+  transition: 0.5s all ease;
+  text-align: center;
+  padding: 10px;
+}
+.tabovi:hover {
+  color: #ffffff;
+  background-color: #8aaae5;
+  border-radius: 10px;
+}
+footer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#socmreze {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+}
+#drustvenemreze {
+  transition: all 0.1s ease;
+  height: 50px;
+  width: 50px;
+}
+#drustvenemreze:hover {
+  height: 55px;
+  width: 55px;
+}
+.vrhstrane {
+  margin-left: 9px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+}
+.vrhstrane:hover {
+  text-decoration: underline;
+}
+.pzapitanja {
+  color: #fff;
+  font-size: 19px;
+}
+.potvrdi {
+  font-size: 12px;
+  font-weight: bold;
+  width: 60px;
+  height: 30px;
+  color: #8aaae5;
+  background-color: #ffffff;
+  border: none;
+}
+hr {
+  margin: 0 50px;
+}
+#prva-sekcija,
+#druga-sekcija,
+#treca-sekcija {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+}
+#prvi-artikal,
+#drugi-artikal,
+#treci-artikal {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #8aaae5;
+  font-size: 25px;
+  padding: 30px;
+  text-align: justify;
+  border-radius: 40px 0 0 40px;
+  height: 482px;
+}
+#drugi-artikal {
+  border-radius: 0 40px 40px 0;
+  width: 800px;
+}
+#treci-artikal {
+  width: 850px;
+}
+#naslov-artikla-1,
+#naslov-artikla-2,
+#naslov-artikla-3 {
+  font-size: 30px;
+  text-align: center;
+}
